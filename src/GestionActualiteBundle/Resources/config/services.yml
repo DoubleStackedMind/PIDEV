@@ -1,0 +1,4 @@
+services:
+#    gestion_actualite.example:
+#        class: GestionActualiteBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

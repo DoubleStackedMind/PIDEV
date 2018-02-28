@@ -1,0 +1,38 @@
+gestion_shop:
+    resource: "@GestionShopBundle/Resources/config/routing.yml"
+    prefix:   /
+
+gestion_actualite:
+    resource: "@GestionActualiteBundle/Resources/config/routing.yml"
+    prefix:   /
+
+gestion_commodite:
+    resource: "@GestionCommoditeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+gestion_match:
+    resource: "@GestionMatchBundle/Resources/config/routing.yml"
+    prefix:   /
+
+gestion_transport:
+    resource: "@GestionTransportBundle/Resources/config/routing.yml"
+    prefix:   /
+
+my_app_user:
+    resource: "@MyAppUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+my_app:
+    resource: "@MyAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
+gestion_ej:
+    resource: "@GestionEJBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

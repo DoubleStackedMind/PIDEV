@@ -1,0 +1,228 @@
+{% extends '@MyAppUser/layout.html.twig' %}
+
+{% block content %}
+    <!doctype html>
+    <html class="no-js" lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content=""/>
+        <!-- Document Title -->
+        <title>Soccer HTML5 Template</title>
+        <!-- StyleSheets -->
+        <link rel="stylesheet" href="{{ asset('cssShop/bootstrap/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('cssShop/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('cssShop/icomoon.css') }}">
+        <link rel="stylesheet" href="{{ asset('cssShop/animate.css') }}">
+        <link rel="stylesheet" href="{{ asset('cssShop/transition.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('cssShop/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('cssShop/color.css') }}">
+        <link rel="stylesheet" href="{{ asset('cssShop/responsive.css') }}">
+        <!-- FontsOnline -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <!-- JavaScripts -->
+
+        <script src="{{ asset('jsShop/vendor/modernizr.js') }}"></script>
+    </head>
+    <body>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Shop Detail -->
+        <div class="theme-padding white-bg">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Shop Content -->
+                    <div class="col-lg-9 col-sm-8 products-content-holder">
+
+                        <!-- Full Width -->
+                        <div class="shop-sort">
+                            <p>Showing 1– 09 of 23 results</p>
+                            <ul>
+                                <li>
+                                    <label>Sort By</label>
+                                    <select class="">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label>Select an Item</label>
+                                    <select class="">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </li>
+                                <li><a class="fa fa-th-list" href="#"></a></li>
+                                <li><a class="fa fa-th" href="#"></a></li>
+                            </ul>
+                        </div>
+                        <!-- Full Width -->
+
+                        <!-- Products -->
+                        <div class="shop-holder theme-padding-bottom">
+                            <div class="row">
+
+
+                                <!-- Product Column -->
+                                {% for f in pro %}
+                                <a href="{{ path('ShowDetails',{ 'idProduit': f.idProduit }) }}">
+                                    <div class="col-lg-4 col-sm-6 col-xs-6 r-full-width">
+                                        <div class="product-column">
+                                            <div class="product-column-inner">
+                                                <div class="product-img">
+                                                    <img src="{{ asset('imagesShop/'~ f.image~'') }}" alt="">
+                                                </div>
+                                                <h5>{{ f.nom }}</h5>
+                                                <span class="product-use">{{ f.categorie }}</span>
+                                            </div>
+                                            <div class="btm">
+                                                <a class="btn" href="{{ path('addToCart',{'idProduit': f.idProduit}) }}"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                                                <span class="price">{{ f.prix }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                    <!-- Product Column -->
+                                {% endfor %}
+
+                            </div>
+                        </div>
+
+                        <!-- Products -->
+                        <!-- Products -->
+
+                        <!-- Pagination -->
+                        <div class="pagination-holder">
+                            <ul class="pagination">
+                                <li><a href="#"><i class="fa fa-angle-double-left"></i>Previous</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#"><i class="fa fa-ellipsis-h"></i></a></li>
+                                <li><a href="#">28</a></li>
+                                <li><a href="#">Next<i class="fa fa-angle-double-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- Pagination -->
+
+                    </div>
+                    <!-- Shop Content -->
+
+                    <!-- Aside -->
+                    <div class="col-lg-3 col-sm-4">
+
+                        <!-- Aside Widget -->
+                        <div class="aside-widget style-2">
+                            <h3>Top Categories</h3>
+                            <div class="shopping-cart-widget">
+                                <ul>
+                                    <li>
+                                        <img src="images/shop-detail/add-cart-01.jpg" alt="">
+                                        <h5><a href="#">Blue Shirt</a></h5>
+                                        <span class="price">$12.00</span>
+                                        <span class="cencel-product">x</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/shop-detail/add-cart-02.jpg" alt="">
+                                        <h5><a href="#">Blue Shirt</a></h5>
+                                        <span class="price">$12.00</span>
+                                        <span class="cencel-product">x</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/shop-detail/add-cart-03.jpg" alt="">
+                                        <h5><a href="#">Blue Shirt</a></h5>
+                                        <span class="price">$12.00</span>
+                                        <span class="cencel-product">x</span>
+                                    </li>
+                                </ul>
+                                <div class="total-price">
+                                    <span class="pull-left">Total</span>
+                                    <span class="pull-right">$117.00</span>
+                                </div>
+                                <a class="btn red-btn full-width" href="#">proceed to checkout</a>
+                            </div>
+                        </div>
+                        <!-- Aside Widget -->
+
+                        <!-- Aside Widget -->
+                        <div class="aside-widget style-2">
+                            <h3>Top Categories</h3>
+                            <div class="range-slider">
+                                <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
+                                <span>Price Range $20 to $85</span>
+                            </div>
+                        </div>
+                        <!-- Aside Widget -->
+
+                        <!-- Aside Widget -->
+                        <div class="aside-widget style-2">
+                            <h3>Best Sellers</h3>
+                            <div class="shopping-cart-widget">
+                                <ul>
+                                    <li>
+                                        <img src="images/best-sellers/img-01.jpg" alt="">
+                                        <h5><a href="#">Gloves</a></h5>
+                                        <span class="price">$12.00 <del>$32.00</del></span>
+                                    </li>
+                                    <li>
+                                        <img src="images/best-sellers/img-02.jpg" alt="">
+                                        <h5><a href="#">Trophy</a></h5>
+                                        <span class="price">$12.00</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/best-sellers/img-03.jpg" alt="">
+                                        <h5><a href="#">Shoes</a></h5>
+                                        <span class="price">$12.00 <del>$32.00</del></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Aside Widget -->
+
+                    </div>
+                    <!-- Aside -->
+
+                </div>
+            </div>
+        </div>
+        <!-- Shop Detail -->
+    </main>
+    <!-- Main Content -->
+
+   <!-- Java Script -->
+
+    <script src="{{ asset('jsShop/vendor/jquery.js') }}"></script>
+    <script src="{{ asset('jsShop/vendor/bootstrap.min.js') }}"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="{{ asset('jsShop/gmap3.min.js') }}"></script>
+    <script src="{{ asset('jsShop/bigslide.js') }}"></script>
+    <script src="{{ asset('jsShop/slick.js') }}"></script>
+    <script src="{{ asset('jsShop/waterwheelCarousel.js') }}"></script>
+    <script src="{{ asset('jsShop/contact-form.js') }}"></script>
+    <script src="{{ asset('jsShop/countTo.js') }}"></script>
+    <script src="{{ asset('jsShop/datepicker.js') }}"></script>
+    <script src="{{ asset('jsShop/rating-star.js') }}"></script>
+    <script src="{{ asset('jsShop/range-slider.js') }}"></script>
+    <script src="{{ asset('jsShop/spinner.js') }}"></script>
+    <script src="{{ asset('jsShop/parallax.js') }}"></script>
+    <script src="{{ asset('jsShop/countdown.js') }}"></script>
+    <script src="{{ asset('jsShop/appear.js') }}"></script>
+    <script src="{{ asset('jsShop/prettyPhoto.js') }}"></script>
+    <script src="{{ asset('jsShop/wow-min.js') }}"></script>
+    <script src="{{ asset('jsShop/main.js') }}"></script>
+    </body>
+    </html>
+
+{% endblock %}

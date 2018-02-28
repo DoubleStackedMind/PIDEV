@@ -1,0 +1,3 @@
+gestion_commodite_homepage:
+    path:     /
+    defaults: { _controller: GestionCommoditeBundle:Default:index }

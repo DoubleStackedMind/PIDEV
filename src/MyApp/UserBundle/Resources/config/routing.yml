@@ -1,0 +1,4 @@
+my_app_user_homepage:
+    path:     /
+    defaults: { _controller: MyAppUserBundle:Default:index }
+

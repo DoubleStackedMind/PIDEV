@@ -1,0 +1,51 @@
+gestion_ej_homepage:
+    path:     /
+    defaults: { _controller: GestionEJBundle:Default:index }
+
+home:
+    path:     /aff
+    defaults: { _controller: GestionEJBundle:Default:affiche }
+
+teams:
+    path:     /teams
+    defaults: { _controller: GestionEJBundle:Liens:GoToTeams }
+players:
+    path:     /players
+    defaults: { _controller: GestionEJBundle:Liens:GoToPlayers }
+fixtures:
+    path:     /fixtures
+    defaults: { _controller: GestionEJBundle:Liens:GoToFixtures }
+Contact:
+    path:     /contact
+    defaults: { _controller: GestionEJBundle:Liens:GoToContact }
+admin:
+    path:     /admin
+    defaults: { _controller: GestionEJBundle:Liens:GoToAdmin }
+AjoutEquipe:
+    path:     /ajeq
+    defaults: { _controller: GestionEJBundle:Equipe:GoToAjoutEquipe }
+AjoutJoueur:
+    path:     /ajjo
+    defaults: { _controller: GestionEJBundle:Joueur:GoToAjoutJoueur }
+AfficheJoueur:
+    path:     /affjou
+    defaults: { _controller: GestionEJBundle:Joueur:GoToAfficheJoueur }
+AfficheEquipe:
+    path:     /affequi
+    defaults: { _controller: GestionEJBundle:Equipe:GoToAfficheEquipe }
+SupprimerEquipe:
+    path:     /suppequi
+    defaults: { _controller: GestionEJBundle:Equipe:GoToSuppEquipe }
+SupprimerJoueur:
+    path:     /suppjou
+    defaults: { _controller: GestionEJBundle:Joueur:GoToSuppJoueur }
+ModifierEquipe:
+    path:     /modequi
+    defaults: { _controller: GestionEJBundle:Equipe:GoToModifEquipe }
+ModifierJoueur:
+    path:     /modjou
+    defaults: { _controller: GestionEJBundle:Joueur:GoToModifJoueur }
+
+
+
+

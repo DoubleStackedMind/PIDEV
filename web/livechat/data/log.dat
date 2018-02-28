@@ -1,0 +1,27 @@
+Application path: /PIDEV/web/livechat/php/app.php?install-wizard-2
+2018-02-14 08:13:02 Undefined index: smtp on line 78 in C:\wamp64\www\PIDEV\web\livechat\views\admin\install-wizard-2.html
+2018-02-14 08:13:02 Undefined index: smtp on line 151 in C:\wamp64\www\PIDEV\web\livechat\views\admin\install-wizard-2.html
+Application path: /PIDEV/web/livechat/php/app.php?install-wizard-2
+2018-02-14 08:14:26 Undefined index: smtp on line 162 in C:\wamp64\www\PIDEV\web\livechat\views\admin\install-wizard.html
+Application path: /PIDEV/web/livechat/php/app.php?install-wizard-2
+2018-02-14 08:14:41 Undefined index: smtp on line 78 in C:\wamp64\www\PIDEV\web\livechat\views\admin\install-wizard-2.html
+2018-02-14 08:14:41 Undefined index: smtp on line 151 in C:\wamp64\www\PIDEV\web\livechat\views\admin\install-wizard-2.html
+Application path: /PIDEV/web/livechat/php/app.php?operator-get-typing-status
+2018-02-14 08:17:52 parse_ini_file(C:\wamp64\www\PIDEV\web\livechat\php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+Application path: /PIDEV/web/livechat/php/app.php?operator-get-typing-status
+2018-02-14 08:17:58 parse_ini_file(C:\wamp64\www\PIDEV\web\livechat\php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+Application path: /PIDEV/web/livechat/php/app.php?operator-get-typing-status
+2018-02-14 08:18:03 parse_ini_file(C:\wamp64\www\PIDEV\web\livechat\php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+Application path: /PIDEV/web/livechat/php/app.php?operator-get-typing-status
+2018-02-14 08:18:08 parse_ini_file(C:\wamp64\www\PIDEV\web\livechat\php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+Application path: /PIDEV/web/livechat/php/app.php?operator-get-typing-status
+2018-02-14 08:18:13 parse_ini_file(C:\wamp64\www\PIDEV\web\livechat\php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+Application path: /PIDEV/web/livechat/php/app.php?operator-get-typing-status
+2018-02-14 08:18:17 parse_ini_file(C:\wamp64\www\PIDEV\web\livechat\php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+Application path: /PIDEV/web/livechat/php/app.php?operator-update-typing-status
+2018-02-14 08:18:21 parse_ini_file(C:\wamp64\www\PIDEV\web\livechat\php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+2018-02-14 08:18:21 parse_ini_file(C:\wamp64\www\PIDEV\web\livechat\php/../data/memory.dat): failed to open stream: No such file or directory on line 97 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+2018-02-14 08:18:21 array_merge(): Argument #1 is not an array on line 102 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+2018-02-14 08:18:21 array_keys() expects parameter 1 to be array, boolean given on line 104 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+2018-02-14 08:18:21 Invalid argument supplied for foreach() on line 104 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php
+2018-02-14 08:18:21 Invalid argument supplied for foreach() on line 79 in C:\wamp64\www\PIDEV\web\livechat\php\service\Memory.php

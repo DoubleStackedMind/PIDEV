@@ -1,0 +1,11 @@
+{% extends '@MyAppUser/template 2/layout.html.twig' %}
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+    {% block fos_user_content %}
+        {% endblock %}
+    {% endblock %}
+{% block footer %}
+    {{ parent() }}
+{% endblock %}

@@ -1,0 +1,4 @@
+services:
+#    gestion_match.example:
+#        class: GestionMatchBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

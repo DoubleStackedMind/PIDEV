@@ -1,0 +1,80 @@
+gestion_shop_homepage:
+    path:     /
+    defaults: { _controller: GestionShopBundle:Default:index }
+
+afficherProduits:
+    path:     /afficherProduit
+    defaults: { _controller:  GestionShopBundle:Produits:afficherProduits }
+
+ajouterproduit:
+    path:     /ajouterproduit
+    defaults: { _controller:  GestionShopBundle:Produits:ajouterproduit  }
+
+afficherProduitsUser:
+    path:     /afficherProduitsUser
+    defaults: { _controller:  GestionShopBundle:Produits:afficherProduitsUser }
+
+post_edit:
+    path:     /modifierproduit/{idProduit}
+    defaults: { _controller: "GestionShopBundle:Produits:Modifier" }
+    methods:  [GET, POST]
+
+afficherMProduits:
+    path:     /afficherMProduits
+    defaults: { _controller:  "GestionShopBundle:Produits:afficherMProduit" }
+
+afficherSProduits:
+    path:     /afficherSProduits
+    defaults: { _controller:  "GestionShopBundle:Produits:afficherSProduit" }
+
+supprimerProduit:
+    path:     /supprimerProduit/{idProduit}
+    defaults: { _controller:  "GestionShopBundle:Produits:supprimerProduit" }
+    methods:   [GET, POST]
+
+ShowDetails:
+    path:     /ShowDetails/{idProduit}
+    defaults: { _controller:  "GestionShopBundle:Produits:ShowDetails" }
+
+ajouterLigne:
+    path:     /ajouterLigne/{idProduit}/{id}/{quantite}
+    defaults:  { _controller: "GestionShopBundle:LigneCommande:ajouterLigne" }
+
+AfficheCommande:
+    path:     /AfficherCommande/{id}
+    defaults:  { _controller: "GestionShopBundle:Commande:AfficherCommande" }
+
+
+
+addToCart:
+    path:     /addToCart/{idProduit}
+    defaults: { _controller:  "GestionShopBundle:LigneCommande:addToCart" }
+    methods:  [POST,GET]
+
+cart:
+    path:     /cart
+    defaults: { _controller: "GestionShopBundle:LigneCommande:cart" }
+
+RemoveOneFromCart:
+    path:     /RemoveOneFromCart/{idProduit}
+    defaults: { _controller:  "GestionShopBundle:LigneCommande:RemoveOneFromCart" }
+
+RemoveFromCart:
+    path:     /RemoveFromCart/{idProduit}
+    defaults:  { _controller: "GestionShopBundle:LigneCommande:RemoveFromCart"  }
+
+UpdateCart:
+    path:     /Updatecart
+    defaults: { _controller:  "GestionShopBundle:LigneCommande:cart" }
+
+ValiderCommande:
+    path:     /ValiderCommande/{id}
+    defaults: { _controller:  "GestionShopBundle:Commande:ValiderCommande"  }
+
+AfficherCommande:
+    path:     /AfficherCommande/{id}
+    defaults: { _controller:  "GestionShopBundle:Commande:AfficherCommande" }
+
+AnnulerCommande:
+    path:     /AnnulerCommande/{id}
+    defaults: { _controller:  "GestionShopBundle:Commande:AnnulerCommande"  }
